@@ -1,0 +1,7 @@
+group 'com.springcloud.demo'
+version "${rootProject.version}"
+archivesBaseName = 'eureka-server'
+
+dependencies {
+    compile 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-server'
+}

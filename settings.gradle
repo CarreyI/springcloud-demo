@@ -1,0 +1,3 @@
+rootProject.name = 'springcloud-parent'
+include 'springcloud-eureka-server'
+
