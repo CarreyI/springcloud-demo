@@ -1,0 +1,14 @@
+plugins {
+    id 'application'
+}
+
+group 'com.springcloud.demo'
+version "${rootProject.version}"
+archivesBaseName = 'hello'
+
+sourceCompatibility = 1.8
+
+dependencies {
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-netflix-eureka-client'
+    compile project(':springcloud-hello-api')
+}

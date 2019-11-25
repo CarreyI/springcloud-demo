@@ -1,0 +1,13 @@
+plugins {
+    id 'application'
+}
+
+group 'com.springcloud.demo'
+version "${parent.version}"
+archivesBaseName = 'feign-consumer'
+
+dependencies {
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-netflix-eureka-client'
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-openfeign'
+    compile project(':springcloud-hello-api')
+}

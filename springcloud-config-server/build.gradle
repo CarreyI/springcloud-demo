@@ -1,0 +1,11 @@
+plugins {
+    id 'application'
+}
+
+group 'com.springcloud.demo'
+version "${rootProject.version}"
+archivesBaseName = 'config-server'
+
+dependencies {
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-config-server'
+}

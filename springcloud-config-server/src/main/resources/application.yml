@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/CarreyI/springcloud-demo.git
+          search-paths: springcloud-config-profile
+          username: carreyi@163.com
+          password: 00028603x
+server:
+  port: 7070
