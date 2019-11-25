@@ -5,8 +5,8 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/CarreyI/springcloud-demo.git
-          search-paths: springcloud-config-profile
+          uri: https://github.com/CarreyI/springcloud-demo
+          search-paths: springcloud-config-profile/config-repo
           username: carreyi@163.com
           password: 00028603x
 server:
