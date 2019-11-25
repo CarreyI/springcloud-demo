@@ -1,15 +1,11 @@
 spring:
   application:
     name: api-gateway
+  cloud:
+    config:
+      uri: http://localhost:7070/
 server:
   port: 8801
-zuul:
-  routes:
-    hello-service:
-      path: /**
-    api-feign:
-      path: /feign-api/**
-      serviceId: feign-consumer
 eureka:
   client:
     serviceUrl:
