@@ -4,12 +4,8 @@ management:
       exposure:
         include: "*"
 zuul:
+  ignored-services: hello-service,feign-consumer
   routes:
-    hello-service:
-      path: /**
     api-feign:
       path: /feign-api/**
       serviceId: feign-consumer
-    actuator:
-      path: /actuator/**
-      url: http://localhost:8801

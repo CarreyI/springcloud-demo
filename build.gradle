@@ -4,6 +4,7 @@ version '1.0-SNAPSHOT'
 buildscript {
     repositories {
         maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+        mavenCentral()
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:$SPRING_BOOT_VERSION")
@@ -31,5 +32,6 @@ subprojects {
 
     repositories {
         maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        mavenCentral()
     }
 }
