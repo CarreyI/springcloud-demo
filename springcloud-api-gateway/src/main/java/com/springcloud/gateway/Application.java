@@ -20,13 +20,13 @@ public class Application {
 //        return new AccessFilter();
 //    }
 
-    @Bean
-    @RefreshScope
-    @ConfigurationProperties("zuul")
-    @Primary
-    public ZuulProperties zuulProperties(){
-        return new ZuulProperties();
-    }
+//    @Bean
+//    @RefreshScope
+//    @ConfigurationProperties("zuul")
+//    @Primary
+//    public ZuulProperties zuulProperties(){
+//        return new ZuulProperties();
+//    }
 
 //    @Bean
 //    public PatternServiceRouteMapper serviceRouteMapper(){
