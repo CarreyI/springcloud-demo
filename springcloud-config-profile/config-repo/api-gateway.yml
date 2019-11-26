@@ -6,3 +6,8 @@ zuul:
       path: /feign-api/**
       serviceId: feign-consumer
   add-host-header: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
