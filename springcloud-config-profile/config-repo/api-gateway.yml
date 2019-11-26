@@ -1,0 +1,12 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+zuul:
+  routes:
+    hello-service:
+      path: /**
+    api-feign:
+      path: /feign-api/**
+      serviceId: feign-consumer
