@@ -4,8 +4,6 @@ spring:
   cloud:
     config:
 #      uri: http://localhost:7070
-      username: user
-      password: 3f3a0a7a-03e9-4cd6-9893-42484b81604e
       discovery:
         enabled: true
         service-id: config-server
