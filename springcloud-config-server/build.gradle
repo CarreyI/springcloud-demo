@@ -8,4 +8,7 @@ archivesBaseName = 'config-server'
 
 dependencies {
     compile group: 'org.springframework.cloud', name: 'spring-cloud-config-server'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-security'
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-netflix-eureka-client'
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-bus-amqp'
 }

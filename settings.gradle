@@ -6,4 +6,5 @@ include 'springcloud-feign-consumer'
 include 'springcloud-hello-api'
 include 'springcloud-api-gateway'
 include 'springcloud-config-server'
+include 'springcloud-rabbitmq-hello'
 

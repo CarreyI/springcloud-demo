@@ -1,0 +1,12 @@
+plugins {
+    id 'application'
+}
+
+group 'com.springcloud.demo'
+version "${rootProject.version}"
+archivesBaseName = 'rabbitmq-hello'
+
+dependencies {
+    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-amqp'
+}
