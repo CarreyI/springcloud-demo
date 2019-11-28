@@ -10,11 +10,11 @@ spring:
       fail-fast: true
       retry:
         max-attempts: 10
-  rabbitmq:
-    port: 5672
-    host: localhost
-    username: springcloud
-    password: 123456
+#  rabbitmq:
+#    port: 5672
+#    host: localhost
+#    username: springcloud
+#    password: 123456
 server:
   port: 8801
 eureka:

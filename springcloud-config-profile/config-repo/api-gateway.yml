@@ -4,7 +4,6 @@ management:
       exposure:
         include: "*"
 zuul:
-  ignored-services: hello-service,feign-consumer
   routes:
     api-feign:
       path: /feign-api/**
