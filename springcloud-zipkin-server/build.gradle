@@ -1,0 +1,14 @@
+plugins {
+    id 'application'
+}
+
+group 'com.springcloud.demo'
+version "${rootProject.version}"
+archivesBaseName = 'zipkin-server'
+
+dependencies {
+    compile (group: 'io.zipkin.java', name: 'zipkin-server', version: '2.12.3'){
+        exclude group: 'org.apache.logging.log4j', module: 'log4j-slf4j-impl'
+    }
+    compile group: 'io.zipkin.java', name: 'zipkin-autoconfigure-ui', version: '2.12.3'
+}

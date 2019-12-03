@@ -1,6 +1,8 @@
 package com.springcloud.ribbon.service;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
@@ -13,6 +15,8 @@ import java.util.Random;
 @Service
 public class ConsumerService {
 
+    private Logger logger = LoggerFactory.getLogger(this.getClass());
+
     @Autowired
     private RestTemplate restTemplate;
 
@@ -22,7 +26,7 @@ public class ConsumerService {
     @HystrixCommand(fallbackMethod = "back")
     public String hello() throws InterruptedException {
         int sleepTime = new Random().nextInt(3000);
-        System.out.println(sleepTime);
+        logger.info(String.valueOf(sleepTime));
         Thread.sleep(sleepTime);
         return restTemplate.getForEntity("http://HELLO-SERVICE/hello",String.class).getBody();
     }

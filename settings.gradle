@@ -8,4 +8,5 @@ include 'springcloud-api-gateway'
 include 'springcloud-config-server'
 include 'springcloud-rabbitmq-hello'
 include 'springcloud-stream-hello'
+include 'springcloud-zipkin-server'
 
