@@ -6,11 +6,10 @@ group 'com.springcloud.demo'
 version "${rootProject.version}"
 archivesBaseName = 'ribbon-consumer'
 
-sourceCompatibility = 1.8
-
 dependencies {
     compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-netflix-eureka-client'
     compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-netflix-ribbon'
     compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-netflix-hystrix'
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-actuator'
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-sleuth'
 }

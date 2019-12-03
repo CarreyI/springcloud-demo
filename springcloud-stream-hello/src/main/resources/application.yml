@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: stream-hello
+  cloud:
+    stream:
+      binders:
+        input:
+          content-type: application/json
+server:
+  port: 5050
