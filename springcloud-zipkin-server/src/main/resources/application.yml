@@ -1,5 +1,10 @@
 spring:
   application:
     name: zipkin-server
+  rabbitmq:
+    port: 5672
+    username: guest
+    password: guest
+    addresses: localhost
 server:
-  port: 9411
+  port: 2020

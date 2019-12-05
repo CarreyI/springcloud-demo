@@ -2,7 +2,17 @@ spring:
   application:
     name: ribbon-consumer
   zipkin:
-    base-url: http://localhost:9411
+    sender:
+      type: rabbit
+  #    base-url: http://localhost:2020
+  sleuth:
+    sampler:
+      probability: 1
+  rabbitmq:
+    addresses: localhost
+    port: 5672
+    username: guest
+    password: guest
 server:
   port: 9090
 eureka:
@@ -18,3 +28,10 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 2000
+logging:
+  level:
+    org:
+      springframework:
+        web:
+          servlet:
+            DispatcherServlet: DEBUG

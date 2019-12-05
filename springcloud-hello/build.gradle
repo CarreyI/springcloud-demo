@@ -8,7 +8,7 @@ archivesBaseName = 'hello'
 
 dependencies {
     compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-netflix-eureka-client'
-    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-sleuth'
-    compile group: 'org.springframework.cloud', name: 'spring-cloud-sleuth-zipkin'
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-zipkin'
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-stream-rabbit'
     compile project(':springcloud-hello-api')
 }

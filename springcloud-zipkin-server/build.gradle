@@ -11,4 +11,6 @@ dependencies {
         exclude group: 'org.apache.logging.log4j', module: 'log4j-slf4j-impl'
     }
     compile group: 'io.zipkin.java', name: 'zipkin-autoconfigure-ui', version: '2.12.3'
+    compile group: 'io.zipkin.java', name: 'zipkin-autoconfigure-collector-rabbitmq', version: '2.12.3'
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-stream-rabbit'
 }
